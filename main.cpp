@@ -10,18 +10,18 @@ int main()
   string input2;
  do
 {
-cout<<"\n==GROCERY LIST MANAGER==";
+  cout<<"\n==GROCERY LIST MANAGER==";
   cout<<"\nEnter your choice: ";
   cout<<"\n (A)dd an item";
   cout<<"\n (Q)uit";
   cout<<"\nYour choice (A/Q): "<<std::flush;
   cin>>input;
-    if(( input == 'A' ) || ( input == 'a'))
+    if( input == 'A'  ||  input == 'a')
 {
-cout<<"what is the item?\n";
+cout<<"What is the item?\n";
  cin>>input2;
  
- if( numItems<5 )
+ if(numItems<5)
  {
     list[numItems]=input2;
     numItems++;
