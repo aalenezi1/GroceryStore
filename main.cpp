@@ -8,7 +8,8 @@ int main()
   int numItems = 0;
   char input;
   string input2;
- do
+
+do
 {
   cout<<"\n==GROCERY LIST MANAGER==";
   cout<<"\nEnter your choice: ";
@@ -28,7 +29,7 @@ cout<<"What is the item?\n";
 }else
 {
     
- cout<< "You'll need a bigger list!\n";
+ cout<<"You'll need a bigger list!\n";
 
    }
   }
