@@ -32,7 +32,7 @@ cout<<"What is the item?\n";
 
    }
   }
-}while(input!='q' && input!='Q' );
+}while(input!='q' && input!='Q');
  
  cout<<"==ITEMS TO BUY==";
  for(int numItem=0; numItems<5; numItems++)
