@@ -16,7 +16,7 @@ int main()
   cout<<"\n (Q)uit";
   cout<<"\nYour choice (A/Q): "<<std::flush;
   cin>>input;
-    if(input == 'A'  ||  input == 'a')
+    if(input == 'A' || input == 'a')
 {
 cout<<"What is the item?\n";
  cin>>input2;
