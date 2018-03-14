@@ -1,13 +1,15 @@
+//Author: Abdallah Alenezi
 #include<iostream>
 #include<string>
+#include<vector>
 using namespace std;
 
 int main()
 {
-  string list[5]; //array of 5 strings
+  vector<string> list; //array of 5 strings
   int numItems = 0;
   char input;
-  string input2;
+  string input1;
 
 do
 {
@@ -20,34 +22,28 @@ do
     if(input == 'A' || input == 'a')
 {
 cout<<"What is the item?\n";
- cin>>input2;
+ cin>>input1;
  
- if(numItems<5)
- {
-    list[numItems]=input2;
-    numItems++;
-}else
-{
-    
- cout<<"You'll need a bigger list!\n";
-
-   }
-  }
+ list.push_back(input1);
+ }
 }while(input!='q' && input!='Q');
  
+ if(list.size() !=0)
+{
  cout<<"==ITEMS TO BUY==";
- for(int numItem=0; numItems<5; numItems++)
+ for(int i=0; i<list.size(); i++)
  {
 
-    cout<<endl<<numItems+1 <<" ";
+    cout<<endl<<i+1 << " "<< list[i];
 
-    if(list[numItems]!="")
-    {
+   
+   }cout<<endl;
 
-            cout<<list[numItems];
-         
-         }
-      }cout<<endl;
+}else
+{
+    cout<<"No items to buy!"<<endl;
 
+ return 0;
+}
  return 0;
 }
